@@ -1,0 +1,7 @@
+{
+    "colunas": [
+        {"nome":"id" ,"tipo": "string"},
+        {"nome":"nome" ,"tipo": "string"},
+        {"idade":"idade","tipo": "string"}
+    ]
+}
