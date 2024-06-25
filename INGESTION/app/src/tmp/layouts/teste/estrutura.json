@@ -1,22 +1,24 @@
-[
-  {
-    "ing1": null,
-    "descricao": "tabela teste",
-    "chave": {
-      "palavra_chave": "teste",
-      "nome_arquivo": "resultado_teste_",
-      "banco": "banco_teste.db",
-      "tabela": "tabela_teste"
+{
+  "estrutura": [
+    {
+      "ing1": null,
+      "descricao": "tabela teste",
+      "chave": {
+        "palavra_chave": "teste",
+        "nome_arquivo": "resultado_teste_",
+        "banco": "banco_teste.db",
+        "tabela": "tabela_teste"
+      }
+    },
+    {
+      "ing2": null,
+      "descricao": "tabela teste 2",
+      "chave": {
+        "palavra_chave": "teste2",
+        "nome_arquivo": "resultado_teste2_",
+        "banco": "banco_teste.db",
+        "tabela": "tabela_teste_2"
+      }
     }
-  },
-  {
-    "ing2": null,
-    "descricao": "tabela teste 2",
-    "chave": {
-      "palavra_chave": "teste2",
-      "nome_arquivo": "resultado_teste2_",
-      "banco": "banco_teste.db",
-      "tabela": "tabela_teste_2"
-    }
-  }
-]
+  ]
+}
