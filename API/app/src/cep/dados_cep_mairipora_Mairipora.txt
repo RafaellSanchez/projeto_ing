@@ -1,0 +1,14 @@
+cep;logradouro;bairro;localidade;uf;ibge;gia;ddd;siafi
+07613-580;Rua Mairiporã;Mantiqueira;Mairiporã;SP;3528502;4339;11;6671
+07605-180;Rua Acácias - Jd Mairipora II;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
+07629-460;Praça Lions Club de Mairiporã;Capoavinha;Mairiporã;SP;3528502;4339;11;6671
+07600-026;Praça Rotary Club de Mairiporã;Centro;Mairiporã;SP;3528502;4339;11;6671
+07605-215;Alameda Tulipas - Jd Mairipora II;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
+07605-210;Alameda Lírios - Jd Mairipora II;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
+07605-170;Alameda Giestas - Jd Mairipora II;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
+07605-175;Alameda Azaléia - Jd Mairipora II;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
+07605-195;Rua das Orquideas - Jd Mairipora II;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
+07605-185;Alameda Camélias - Jd Mairipora II;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
+07605-165;Alameda Flor de Maio - Jd Mairipora II;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
+07605-150;Alameda Amor Perfeito - Jd Mairipora II;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
+07605-235;Alameda das Margaridas - Jd Mairipora II;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
