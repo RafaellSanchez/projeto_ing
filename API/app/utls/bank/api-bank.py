@@ -96,6 +96,7 @@ print('transformando dados em dataframe')
 #transformando minha lista em um dataframe
 df = pd.DataFrame(list_data)
 
+
 print('carregando variaveis')
 caminho = '/workspaces/projeto_ing/API/app/src/bank/'
 arquivo = f'dados_bank_{timestamp}.txt'
