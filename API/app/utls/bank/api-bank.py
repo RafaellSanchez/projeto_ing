@@ -101,6 +101,7 @@ print('carregando variaveis')
 caminho = '/workspaces/projeto_ing/API/app/src/bank/'
 arquivo = f'dados_bank_{timestamp}.txt'
 
+
 time.sleep(3)
 print('salvando...')
 df.to_csv(f'{caminho}{arquivo}', sep=';')
