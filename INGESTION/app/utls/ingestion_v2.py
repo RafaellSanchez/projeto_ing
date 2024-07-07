@@ -126,5 +126,6 @@ try:
                                         shutil.move(caminho_completo, caminho_backup)
                                         print(f'Arquivo enviado para backup: {caminho_completo}')
                                         print(f'Destino: {caminho_backup}')
+                                        
 except Exception as e:
     print(f"Erro: {e}")
