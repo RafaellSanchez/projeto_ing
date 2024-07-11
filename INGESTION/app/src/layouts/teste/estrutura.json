@@ -1,16 +1,22 @@
-{
-    "processos": [
-      {
-        "banco": "banco_teste.db",
-        "tabela": "tabela_teste",
-        "descricao": "tabela teste",
-        "nomeArquivoChave": "teste"
-      },
-      {
-        "banco": "banco_teste.db",
-        "tabela": "tabela_teste_2",
-        "descricao": "tabela teste 2",
-        "nomeArquivoChave": "teste2"
-      }
-    ]
+[
+  {
+    "nome_arquivo": "resultado_teste_",
+    "descricao": "tabela teste",
+    "chave": {
+      "palavra_chave": "teste",
+      "banco": "banco_teste.db",
+      "tabela": "tabela_teste"
+    }
+  },
+  {
+    "nome_arquivo": "resultado_teste2_",
+    "descricao": "tabela teste 2",
+    "chave": {
+      "palavra_chave": "teste2",
+      "banco": "banco_teste.db",
+      "tabela": "tabela_teste2"
+    }
   }
+]
+  
+  

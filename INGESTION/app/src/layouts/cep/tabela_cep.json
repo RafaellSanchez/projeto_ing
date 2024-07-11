@@ -1,5 +1,6 @@
 {
     "colunas": [
+        {"nome": "cep", "tipo": "string"},
         {"nome": "logradouro", "tipo": "string"},
         {"nome": "bairro", "tipo": "string"},
         {"nome": "localidade", "tipo": "string"},
