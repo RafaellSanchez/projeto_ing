@@ -13,7 +13,6 @@ ctrl_ing = "/workspaces/projeto_ing/INGESTION/app/src/archiving_ctrl/arquivo_con
 landing = '/workspaces/projeto_ing/INGESTION/app/src/landing/'
 layouts = '/workspaces/projeto_ing/INGESTION/app/src/layouts/'
 
-
 read_landing = os.listdir(landing)
 print("Conteúdos do diretório 'landing':", read_landing)
 read_layouts = os.listdir(layouts)
@@ -21,7 +20,6 @@ print("Conteúdos do diretório 'layouts':", read_layouts)
 print('===============================================')
 
 try:
-    
     for item in read_layouts:
         accept = os.path.join(layouts, item)
         if os.path.isdir(accept):
@@ -29,7 +27,7 @@ try:
             print(f'item encontrado no diretório: {item}')
             subconteudos = os.listdir(accept)
             print('========================')
-            print(f' conteudo: {subconteudos}')
+            print(f'conteudo: {subconteudos}')
             
             caminho_estrutura_json = os.path.join(accept, 'estrutura.json')
             if os.path.exists(caminho_estrutura_json):
@@ -40,50 +38,41 @@ try:
                     print(f'Conteúdo do arquivo de controle de ingestão: {conteudo_load}')
                     
                 with open(caminho_estrutura_json, 'r') as f:
-                        config_estrutura = json.load(f)
-                        print("Configuração estrutura:", config_estrutura)
-                        print("=======================")
-                        print("Iniciando ingestão:")
-                        print("=======================")
-                        for estr in config_estrutura:
-                            nm_arq = estr['nome_arquivo']
-                            key = estr['chave']['palavra_chave']
-                            banco = estr['chave']['banco']
-                            tabela = estr['chave']['tabela']
-                            print('=======================')
-                            print(estr)
-                            print(nm_arq)
-                            print(key)
-                            print(banco)
-                            print(tabela)
-                            print('=======================')
-                            
-                            
+                    config_estrutura = json.load(f)
+                    print("Configuração estrutura:", config_estrutura)
+                    print("=======================")
+                    print("Iniciando ingestão:")
+                    print("=======================")
+                    for estr in config_estrutura:
+                        nm_arq = estr['nome_arquivo']
+                        key = estr['chave']['palavra_chave']
+                        banco = estr['chave']['banco']
+                        tabela = estr['chave']['tabela']
+                        print('=======================')
+                        print(estr)
+                        print(nm_arq)
+                        print(key)
+                        print(banco)
+                        print(tabela)
+                        print('=======================')
                                 
-                            for root, dirs, lista in os.walk(landing):
-                                print(f'Procurando em {root}...')
-                                for nome_arquivo in lista:
-                                    print(f'Verificando arquivo: {nome_arquivo}')
-                                    if key in nome_arquivo:
-                                        caminho_completo = os.path.join(root, nome_arquivo)
-                                        print(f'Arquivo contendo a chave encontrado: {caminho_completo}')
-                                        sav = os.path.basename(caminho_completo)
-                                        print(f'Conteúdo a gravar: {sav}')
-                                        
+                        for root, dirs, lista in os.walk(landing):
+                            print(f'Procurando em {root}...')
+                            for nome_arquivo in lista:
+                                print(f'Verificando arquivo: {nome_arquivo}')
+                                if key in nome_arquivo:
+                                    caminho_completo = os.path.join(root, nome_arquivo)
+                                    print(f'Arquivo contendo a chave encontrado: {caminho_completo}')
+                                    
+                                    sav = os.path.basename(caminho_completo)
+                                    print(f'Conteúdo a gravar: {sav}')
+                                    
                                     if sav + '\n' not in conteudo_load:
                                         with open(ctrl_ing, 'a') as controle_ingestao:
                                             controle_ingestao.write(f"{sav}\n")
                                             print(f'nomenclatura do arquivo salvo: {sav}')
                                             print('=================================')
                                     
-                                            
-                                    '''
-                                    Se o arquivo estiver presente no "arquivo_controle.txt" 
-                                    o código deve ignorar a ingestão.
-                                    Talvez um break ou um for para validar as informações dentro do arquivo e comparar
-                                    se existir o nome do arquivo, ele deve ignora-lo.
-                                    '''
-                                        
                                     parte_util = sav.split('_')[1]
                                     if parte_util == key:
                                         print('Chave encontrada')
@@ -154,14 +143,14 @@ try:
                                             conn.commit()
                                             conn.close()
                                             print("Ingestão de dados concluída com sucesso!")
-                                        
+                                            print("====================================")
+                                            
                                         shutil.move(caminho_completo, caminho_backup)
                                         print(f'Arquivo enviado para backup: {caminho_completo}')
                                         print(f'Destino: {caminho_backup}')
                                         print('==========================')
-                                        
-                                        
                                     else:
                                         print('Chave não encontrada no arquivo')
+                                    break
 except Exception as e:
-    print(f"Erro: {e}")                     
+    print(f"Erro: {e}")
