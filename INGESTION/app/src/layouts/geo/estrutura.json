@@ -1,0 +1,11 @@
+[
+    {
+      "nome_arquivo": "dados_geo",
+      "descricao": "tabela geolocalizacao",
+      "chave": {
+        "palavra_chave": "geo",
+        "banco": "banco_geo.db",
+        "tabela": "tabela_geo"
+      }
+    }
+]
