@@ -52,7 +52,7 @@ if dados:
 df = pd.DataFrame(dados_list)
 print(df)
 
-file = f'dados_geo.txt'
+file = f'dados_geo_{timestamp}.txt'
 path = '/workspaces/projeto_ing/API/app/src/geo/'
 
 df.to_csv(f'{path}{file}', sep=';', index=False)
