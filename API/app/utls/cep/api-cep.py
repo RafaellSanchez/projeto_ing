@@ -1,6 +1,9 @@
 import requests
 import pandas as pd
 import time
+from datetime import datetime
+
+timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 
 #função para mensagem
 def mensagem(msg):
@@ -68,7 +71,7 @@ for lista in listas:
         
         mensagem(f'Preparando para salvar: {lista}')
         caminho = '/workspaces/projeto_ing/API/app/src/cep/'
-        arquivo = f'dados_cep_mairipora_{lista}.txt'
+        arquivo = f'dados_cep_mairipora_{lista}_{timestamp}.txt'
         
         df.to_csv(f'{caminho}{arquivo}', sep=';', index=False)
         print(f'Arquivo salvo: {arquivo}')
