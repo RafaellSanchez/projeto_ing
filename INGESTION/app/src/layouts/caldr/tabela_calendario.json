@@ -1,0 +1,10 @@
+{
+    "colunas": [
+        {"nome":"nome" ,"tipo": "string"},
+        {"nome":"descricao" ,"tipo": "string"},
+        {"nome":"data_ISO" ,"tipo": "string"},
+        {"nome":"ano" ,"tipo": "string"},
+        {"nome":"mes" ,"tipo": "string"},
+        {"nome":"dia" ,"tipo": "string"}
+    ]
+}

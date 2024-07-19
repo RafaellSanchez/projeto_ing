@@ -1,0 +1,11 @@
+[
+    {
+      "nome_arquivo": "resultado_calendario_",
+      "descricao": "tabela resultado do calendario de feriados",
+      "chave": {
+        "palavra_chave": "calendario",
+        "banco": "banco_calendario.db",
+        "tabela": "tabela_calendario"
+      }
+    }
+]
