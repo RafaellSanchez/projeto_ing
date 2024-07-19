@@ -1,0 +1,11 @@
+[
+    {
+      "nome_arquivo": "resultado_marcas_",
+      "descricao": "tabela resultado de marcas de carros",
+      "chave": {
+        "palavra_chave": "marcas",
+        "banco": "banco_car.db",
+        "tabela": "tabela_marcas"
+      }
+    }
+]

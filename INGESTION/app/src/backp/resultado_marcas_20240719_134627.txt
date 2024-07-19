@@ -1,0 +1,98 @@
+codigo;modelo
+1;Acura
+2;Agrale
+3;Alfa Romeo
+4;AM Gen
+5;Asia Motors
+189;ASTON MARTIN
+6;Audi
+207;Baby
+7;BMW
+8;BRM
+123;Bugre
+238;BYD
+236;CAB Motors
+10;Cadillac
+245;Caoa Chery
+161;Caoa Chery/Chery
+11;CBT Jipe
+136;CHANA
+182;CHANGAN
+12;Chrysler
+13;Citroën
+14;Cross Lander
+241;D2D Motors
+15;Daewoo
+16;Daihatsu
+246;DFSK
+17;Dodge
+147;EFFA
+18;Engesa
+19;Envemo
+20;Ferrari
+21;Fiat
+149;Fibravan
+22;Ford
+190;FOTON
+170;Fyber
+199;GEELY
+23;GM - Chevrolet
+153;GREAT WALL
+24;Gurgel
+240;GWM
+152;HAFEI
+214;HITECH ELECTRIC
+25;Honda
+26;Hyundai
+27;Isuzu
+208;IVECO
+177;JAC
+28;Jaguar
+29;Jeep
+154;JINBEI
+30;JPX
+31;Kia Motors
+32;Lada
+171;LAMBORGHINI
+33;Land Rover
+34;Lexus
+168;LIFAN
+127;LOBINI
+35;Lotus
+140;Mahindra
+36;Maserati
+37;Matra
+38;Mazda
+211;Mclaren
+39;Mercedes-Benz
+40;Mercury
+167;MG
+156;MINI
+41;Mitsubishi
+42;Miura
+43;Nissan
+44;Peugeot
+45;Plymouth
+46;Pontiac
+47;Porsche
+185;RAM
+186;RELY
+48;Renault
+195;Rolls-Royce
+49;Rover
+50;Saab
+51;Saturn
+52;Seat
+247;SERES
+183;SHINERAY
+157;smart
+125;SSANGYONG
+54;Subaru
+55;Suzuki
+165;TAC
+56;Toyota
+57;Troller
+58;Volvo
+59;VW - VolksWagen
+163;Wake
+120;Walk
