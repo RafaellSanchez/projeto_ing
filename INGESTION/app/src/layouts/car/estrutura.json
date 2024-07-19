@@ -7,5 +7,14 @@
         "banco": "banco_car.db",
         "tabela": "tabela_marcas"
       }
+    },
+    {
+      "nome_arquivo": "modelo_vw_",
+      "descricao": "tabela resultado de modelos volkswagem",
+      "chave": {
+        "palavra_chave": "vw",
+        "banco": "banco_car.db",
+        "tabela": "tabela_vw"
+      }
     }
 ]
