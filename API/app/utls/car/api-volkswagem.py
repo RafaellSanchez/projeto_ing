@@ -21,7 +21,8 @@ if dados:
         
         data_list.append({
             'codigo':codigo,
-            'modelo':nome
+            'modelo':nome,
+            'id': 59
         })
 df = pd.DataFrame(data_list)
 print(df)
