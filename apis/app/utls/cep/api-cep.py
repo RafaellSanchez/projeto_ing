@@ -70,7 +70,7 @@ for lista in listas:
         df = pd.DataFrame(dados_lista)
         
         mensagem(f'Preparando para salvar: {lista}')
-        caminho = '/workspaces/projeto_ing/API/app/src/cep/'
+        caminho = '/workspaces/projeto_ing/apis/app/src/cep/'
         arquivo = f'dados_cep_mairipora_{lista}_{timestamp}.txt'
         
         df.to_csv(f'{caminho}{arquivo}', sep=';', index=False)
