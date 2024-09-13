@@ -8,10 +8,10 @@ from datetime import datetime
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 data_igtao = datetime.now().strftime('%Y-%m-%d')
 
-caminho_backup = '/workspaces/projeto_ing/INGESTION/app/src/backp/'
-ctrl_ing = "/workspaces/projeto_ing/INGESTION/app/src/archiving_ctrl/arquivo_controle.txt"
-landing = '/workspaces/projeto_ing/INGESTION/app/src/landing/'
-layouts = '/workspaces/projeto_ing/INGESTION/app/src/layouts/'
+caminho_backup = "/workspaces/projeto_ing/ingestion/backup/backp/"
+ctrl_ing = "/workspaces/projeto_ing/ingestion/backup/archiving_ctrl/arquivo_controle.txt"
+landing = "/workspaces/projeto_ing/ingestion/app/src/landing/"
+layouts = "/workspaces/projeto_ing/ingestion/app/src/layouts/"
 
 read_landing = os.listdir(landing)
 print("Conteúdos do diretório 'landing':", read_landing)
@@ -115,7 +115,7 @@ try:
                                                     elif col['tipo'] == 'data':
                                                         df[col['nome']] = pd.to_datetime(df[col['nome']], format=col.get('formato', None))
                                                         
-                                            banco_caminho = f'/workspaces/projeto_ing/INGESTION/database/{banco}'
+                                            banco_caminho = f'/workspaces/projeto_ing/database/{banco}'
                                             conn = sqlite3.connect(banco_caminho)
                                             print(f'Banco de dados: {banco_caminho}')
                                             print(f'Banco de dados criado se não existir: {banco}')
