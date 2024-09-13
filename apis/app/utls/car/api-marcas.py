@@ -41,7 +41,7 @@ df = pd.DataFrame(data_list)
 print(df)
 
 file = f'resultado_marcas_{timestamp}.txt'
-path = '/workspaces/projeto_ing/API/app/src/car/'
+path = '/workspaces/projeto_ing/apis/app/src/car/'
 
 df.to_csv(f'{path}{file}', sep=';', index=False)
 print(f'Arquivo salvo: {file}')
