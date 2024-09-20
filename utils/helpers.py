@@ -28,3 +28,5 @@ def ler_arquivo(caminho, delimitador=","):
         print(f"Arquivo não encontrado: {caminho}")
     except Exception as e:
         print(f"Ocorreu um erro ao ler o arquivo: {e}")
+        
+#criar uma função de conexão com o sqlite
