@@ -30,3 +30,12 @@ def ler_arquivo(caminho, delimitador=","):
         print(f"Ocorreu um erro ao ler o arquivo: {e}")
         
 #criar uma função de conexão com o sqlite
+
+def conectar_sqlite (banco, caminho_banco ):
+    import sqlite3
+    banco = ''
+    caminho_banco = f"/workspaces/projeto_ing/database/{banco}"
+    conn = sqlite3.connect(caminho_banco)
+    cursor = conn.cursor()
+    
+    return banco, conn, caminho_banco
