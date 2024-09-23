@@ -39,3 +39,21 @@ def conectar_sqlite (banco, caminho_banco ):
     cursor = conn.cursor()
     
     return banco, conn, caminho_banco
+
+
+def consult_sqlite (banco, caminho_banco, tabela, query ):
+    import sqlite3
+    banco = ''
+    caminho_banco = f"/workspaces/projeto_ing/database/{banco}"
+    conn = sqlite3.connect(caminho_banco)
+    cursor = conn.cursor()
+    tabela = ''
+    
+    query = f'select * from {tabela}'
+    cursor.execute(query)
+    
+    consulta = cursor.fetchall()
+    for resultado in consulta:
+        print(resultado)
+    
+    return banco, conn, caminho_banco, tabela, query
