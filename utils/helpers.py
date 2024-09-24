@@ -57,3 +57,5 @@ def consult_sqlite (banco, caminho_banco, tabela, query ):
         print(resultado)
     
     return banco, conn, caminho_banco, tabela, query
+
+#teste
