@@ -1,10 +1,8 @@
-import pandas as pd
-import pymongo
-
 import pymongo
 import pandas as pd
 import json
 from pymongo import MongoClient
+import sqlite3
 
 def conectar_mongo (uri, db, collection ):
     from pymongo import MongoClient
@@ -15,7 +13,6 @@ def conectar_mongo (uri, db, collection ):
     collection = db['minha_colecao']
     
     return uri, client, collection
-
 
 
 def ler_arquivo(caminho, delimitador=","):
@@ -29,33 +26,39 @@ def ler_arquivo(caminho, delimitador=","):
     except Exception as e:
         print(f"Ocorreu um erro ao ler o arquivo: {e}")
         
-#criar uma função de conexão com o sqlite
 
-def conectar_sqlite (banco, caminho_banco ):
+def conectar_sqlite(banco, caminho_banco=None):
     import sqlite3
-    banco = ''
-    caminho_banco = f"/workspaces/projeto_ing/database/{banco}"
+    # Se o caminho do banco não for fornecido, usa o caminho padrão
+    if caminho_banco is None:
+        caminho_banco = f"/workspaces/projeto_ing/database/{banco}"
+    
     conn = sqlite3.connect(caminho_banco)
     cursor = conn.cursor()
     
-    return banco, conn, caminho_banco
+    return conn, cursor, caminho_banco
 
 
-def consult_sqlite (banco, caminho_banco, tabela, query ):
+def consult_sqlite(banco, caminho_banco=None, tabela=None, query=None):
     import sqlite3
-    banco = ''
-    caminho_banco = f"/workspaces/projeto_ing/database/{banco}"
+    
+    if caminho_banco is None:
+        caminho_banco = f"/workspaces/projeto_ing/database/{banco}"
+    
     conn = sqlite3.connect(caminho_banco)
     cursor = conn.cursor()
-    tabela = ''
     
-    query = f'select * from {tabela}'
+    if query is None:
+        if tabela is None:
+            raise ValueError("A tabela deve ser fornecida se a query não for especificada.")
+        query = f'SELECT * FROM {tabela}'
+    
     cursor.execute(query)
-    
     consulta = cursor.fetchall()
+    
     for resultado in consulta:
         print(resultado)
+        
+    conn.close()
     
-    return banco, conn, caminho_banco, tabela, query
-
-#teste
+    return consulta
