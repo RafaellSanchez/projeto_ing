@@ -62,3 +62,5 @@ def consult_sqlite(banco, caminho_banco=None, tabela=None, query=None):
     conn.close()
     
     return consulta
+
+
