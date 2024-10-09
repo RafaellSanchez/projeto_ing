@@ -3,6 +3,8 @@ import pandas as pd
 import json
 from pymongo import MongoClient
 import sqlite3
+from cryptography.fernet import Fernet
+import pandas as pd
 
 def conectar_mongo (uri, db, collection ):
     from pymongo import MongoClient
@@ -63,4 +65,32 @@ def consult_sqlite(banco, caminho_banco=None, tabela=None, query=None):
     
     return consulta
 
+
+
+
+def cripto_dados(caminho, chave=None, cipher_suite=None, arquivocript=None, delimitador=';'):
+    from cryptography.fernet import Fernet
+    import pandas as pd
+
+    try:
+        df = pd.read_csv(caminho, sep=delimitador)
+        if chave is None:
+            chave = Fernet.generate_key()
+        if cipher_suite is None:
+            cipher_suite = Fernet(chave)
+        
+        json_string = df.to_json()
+        encrypted_data = cipher_suite.encrypt(json_string.encode())
+        
+        if arquivocript:
+            with open(arquivocript, "wb") as file:
+                file.write(encrypted_data)
+                print('Arquivo criptografado salvo!')
+                print(f'Caminho: {arquivocript}')
+        
+        return df, chave, cipher_suite, encrypted_data, arquivocript
+    except FileNotFoundError:
+        print(f"Arquivo não encontrado: {caminho}")
+    except Exception as e:
+        print(f"Ocorreu um erro ao processar o arquivo: {e}")
 
