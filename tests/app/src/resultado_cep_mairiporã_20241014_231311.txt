@@ -1,0 +1,172 @@
+cep;endereco;bairro;complemento;uf;cidade;estado;regiao;ddd;ibge;data
+07601-345;Avenida Hum;Olho D'Água;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-690;Avenida Rubi;Mantiqueira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-655;Avenida Ouro;Mantiqueira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07627-160;Avenida Berna;Luiz Fagundes;(Pq Suiço Cant 1 Gl);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07657-210;Avenida Alpes;Mato Dentro;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-680;Avenida Safira;Mantiqueira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07631-320;Avenida Sandra;Rio acima;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07634-020;Avenida Brasil;Lavras;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07617-005;Avenida Acesso;Juqueri Mirim;(Pq Resid Cant);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07631-570;Avenida do Sol;Rio acima;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07663-080;Avenida Brasil;Jundiaizinho (Terra Preta);(Jd Terrcasa);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-705;Avenida Galena;Mantiqueira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07611-390;Avenida da Mata;Barreiro;(Jd Suisso);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-710;Avenida Quartzo;Mantiqueira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-028;Avenida Mariana;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-715;Avenida Pérola;Mantiqueira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07627-260;Avenida Zuriqui;Luiz Fagundes;(Pq Suiço 3 Gl);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07657-205;Avenida Everest;Mato Dentro;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-720;Avenida Bauxita;Mantiqueira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07607-515;Avenida Marginal;São Vicente;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07612-860;Avenida Colônia;Boa Vista;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07666-180;Avenida Nebraska;Corumbá (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07632-200;Avenida Marginal;Rio acima;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07657-180;Avenida Himalaia;Mato Dentro;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07602-280;Avenida Montreal;Olho D'Água;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07606-090;Avenida Marginal;Rio abaixo;(Cpos Mair Gl 2);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07664-050;Avenida das Rosas;Jundiaizinho (Terra Preta);(Mil Flores);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07664-110;Avenida Espraiada;Jundiaizinho (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07621-885;Avenida das Rosas;Caraguatá;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07663-090;Avenida Brasília;Jundiaizinho (Terra Preta);(Jd Terrcasa);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07604-605;Avenida Maranduba;Caceia;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-188;Avenida dos Rubis;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-660;Avenida Esmeralda;Mantiqueira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07625-480;Avenida Cancelata;Luiz Fagundes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07618-862;Avenida São Paulo;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-200;Avenida dos Cedros;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-236;Avenida Pau Marfim;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07601-050;Avenida Beira Lago;Olho D'Água;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-024;Avenida Ouro Preto;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-444;Avenida dos Bambus;Roseira;(Pq Petr Plta);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07620-120;Avenida Caraguatá;Cumbari;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07620-100;Avenida Campo Baio;Cumbari;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07664-070;Avenida dos Cravos;Jundiaizinho (Terra Preta);(Mil Flores);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07664-495;Avenida Flamboyant;Jundiaizinho (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07629-004;Avenida Neli Ladeia;Capoavinha;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-224;Avenida dos Angicos;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07664-083;Avenida das Tulipas;Jundiaizinho (Terra Preta);(Mil Flores);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-460;Avenida das Caviunas;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07611-015;Avenida Serra Morena;Barreiro;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-765;Avenida Renato Pucci;Mantiqueira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07629-116;Rua C;Capoavinha;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07612-748;Rua A;Boa Vista;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07610-390;Rua B;Santa Inês;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07610-380;Rua A;Santa Inês;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07668-410;Rua B;Pedra Vermelha (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07622-100;Rua A;Caraguatá;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07645-300;Rua A;Marmelo;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07629-108;Rua A;Capoavinha;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07661-150;Rua K;Terra Preta (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07607-505;Rua Um;São Vicente;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07609-090;Rua Um;Vila Machado;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07663-165;Rua Um;Jundiaizinho (Terra Preta);(Jd Pres);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07659-585;Rua Um;Canjica (Terra Preta);(Vem Viver);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07617-460;Rua Um;Juqueri Mirim;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07626-590;Rua Um;Luiz Fagundes;(Oásis Plta);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07668-425;Rua Um;Pedra Vermelha (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-092;Rua Um;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07653-620;Rua Um;Remédios;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07629-020;Rua Um;Capoavinha;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07662-745;Rua Um;Terra Preta (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07606-492;Rua Um;Rancho Grande;(Pq da Represa);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07656-050;Rua Um;Mato Dentro;(Jd Okinaga);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07606-215;Rua Um;Rio abaixo;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07607-445;Rua Hum;São Vicente;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07607-360;Rua Dez;São Vicente;(Pq Náutico Gl 3);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07656-060;Rua Dez;Mato Dentro;(Jd Okinaga);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07659-615;Rua Dez;Canjica (Terra Preta);(Vem Viver);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-052;Rua Dez;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07621-305;Rua Joa;Caraguatá;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07611-625;Rua Raia;Barreiro;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07601-302;Rua Roma;Olho D'Água;(B Ecol Sierra Madre);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07656-065;Rua Nove;Mato Dentro;(Jd Okinaga);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07626-340;Rua Onze;Luiz Fagundes;(Pq Res Sossego);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07659-645;Rua Sete;Canjica (Terra Preta);(Vem Viver);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07629-028;Rua Rubi;Capoavinha;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07631-165;Rua Dois;Rio acima;(Chac Dom Bosco);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07663-335;Rua Doze;Jundiaizinho (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07625-040;Rua Dois;Luiz Fagundes;(Jd Esperança);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-072;Rua Onze;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07656-010;Rua Sete;Mato Dentro;(Jd Okinaga);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07606-336;Rua Nice;Rancho Grande;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07625-430;Rua Sete;Luiz Fagundes;(Pq Votorantim);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-056;Rua Nove;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07663-345;Rua Onze;Jundiaizinho (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07656-020;Rua Seis;Mato Dentro;(Jd Okinaga);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07626-320;Rua Oito;Luiz Fagundes;(Pq Res Sossego);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07612-744;Rua Lobo;Boa Vista;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07621-290;Rua Ipê;Caraguatá;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07653-630;Rua Dois;Remédios;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07659-660;Rua Doze;Canjica (Terra Preta);(Vem Viver);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-670;Estrada G;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-680;Estrada F;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-660;Estrada E;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-700;Estrada D;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-520;Estrada M;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-730;Estrada C;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-560;Estrada L;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-640;Estrada B;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-630;Estrada K;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-650;Estrada A;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-600;Estrada J;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-610;Estrada I;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-620;Estrada H;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-510;Estrada M2;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07664-270;Estrada Um;Jundiaizinho (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-530;Estrada M1;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07632-590;Estrada Tupi;Rio acima;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07626-403;Estrada Doze;Luiz Fagundes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07664-275;Estrada Dois;Jundiaizinho (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-626;Estrada Fragoso;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07657-305;Estrada do Mimi;Mato Dentro;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07663-180;Estrada Mirante;Jundiaizinho (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07642-580;Estrada do Clube;Invernada;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07657-275;Estrada da Fonte;Mato Dentro;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07664-390;Estrada Laramara;Jundiaizinho (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07666-280;Estrada Laramara;Corumbá (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07626-420;Estrada do Itaim;Luiz Fagundes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07658-520;Estrada Existente;Mato Dentro;(Acesso Fco Rocha);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07625-770;Estrada de Ibirá;Luiz Fagundes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07605-360;Estrada Existente;Rio abaixo;(David Simonovitch);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07627-120;Estrada da Tapera;Luiz Fagundes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07645-100;Estrada Existente;Marmelo;(Chac Sol Nasc);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07657-245;Estrada do Parque;Mato Dentro;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07667-735;Estrada Existente;Cardoso (Terra Preta);(Jd Almeida);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07631-355;Estrada Municipal;Rio acima;(Jd A Coimbra);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07666-100;Estrada Municipal;Corumbá (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07626-105;Estrada Municipal;Luiz Fagundes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07663-175;Estrada Brasília;Jundiaizinho (Terra Preta);(Sit S Isabel);SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07612-504;Estrada Existente;Boa Vista;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07634-005;Estrada das Lavras;Lavras;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07638-020;Estrada das Lavras;Pirucaia;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07667-700;Estrada Particular;Cardoso (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07657-285;Estrada da Represa;Mato Dentro;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07623-190;Estrada do Canduá;Samambaia;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07631-405;Estrada das Lavras;Rio acima;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07629-302;Estrada Tahira Eki;Capoavinha;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07626-100;Estrada dos Moraes;Luiz Fagundes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07618-640;Estrada São Pedro;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07627-090;Estrada do Valinho;Luiz Fagundes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07619-622;Estrada Particular;Roseira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07664-000;Rodovia Arão Sahm;Jundiaizinho (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07631-200;Rodovia Arão Sahm;Rio acima;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07652-010;Rodovia Arão Sahm;Remédios;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-300;Rodovia Arão Sahm;Boa Vista;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07613-500;Rodovia Arão Sahm;Mantiqueira;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07625-500;Rodovia Arão Sahm;Luiz Fagundes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07662-810;Rodovia Arão Sahm;Terra Preta (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07600-070;Rodovia Fernão Dias;Centro;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07631-300;Rodovia Fernão Dias;Rio acima;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07602-200;Rodovia Fernão Dias;Olho D'Água;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07625-000;Rodovia Fernão Dias;Luiz Fagundes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07600-320;Rodovia Fernão Dias;Cidade Jardim;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07600-400;Rodovia Fernão Dias;Moinho;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07661-000;Rodovia Fernão Dias;Terra Preta (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07663-000;Rodovia Fernão Dias;Jundiaizinho (Terra Preta);;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07629-000;Rodovia Fernão Dias;Capoavinha;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07600-598;Rodovia Prefeito Luiz Salomao Chamma;Lavapés;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07605-700;Rodovia Prefeito Luiz Salomao Chamma;Rio abaixo;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07600-740;Estrada Armando Barbosa de Almeida;Chácara Arantes;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07604-525;Estrada Armando Barbosa de Almeida;Caceia;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
+07605-005;Estrada Armando Barbosa de Almeida;Rio abaixo;;SP;Mairiporã;São Paulo;Sudeste;11;3528502;2024-10-14
