@@ -154,3 +154,4 @@ try:
                                     break
 except Exception as e:
     print(f"Erro: {e}")
+
