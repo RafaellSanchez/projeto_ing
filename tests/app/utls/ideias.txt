@@ -1,0 +1,4 @@
+criar dados sintéticos
+criar funcao para os dados sintéticos
+criar cobertura de testes
+testar cobertura
