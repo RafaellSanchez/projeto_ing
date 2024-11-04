@@ -2,3 +2,6 @@
 2- criar funcao para os dados sintéticos
 3- criar cobertura de testes
 4- testar cobertura
+
+-- desenvolvendo
+  5- organizar camada medalion sqlite
