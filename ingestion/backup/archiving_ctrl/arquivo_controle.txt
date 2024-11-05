@@ -8,3 +8,4 @@ modelo_vw_20240719_140024.txt
 resultado_calendario_20240719_145047.txt
 modelo_vw_20240821_225259.txt
 dados_geo_2024-07-15.txt
+dados_geo_2024-07-16.txt

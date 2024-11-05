@@ -115,7 +115,7 @@ try:
                                                     elif col['tipo'] == 'data':
                                                         df[col['nome']] = pd.to_datetime(df[col['nome']], format=col.get('formato', None))
                                                         
-                                            banco_caminho = f'/workspaces/projeto_ing/database/{banco}'
+                                            banco_caminho = f'/workspaces/projeto_ing/database/sqlite/bronze/{banco}'
                                             conn = sqlite3.connect(banco_caminho)
                                             print(f'Banco de dados: {banco_caminho}')
                                             print(f'Banco de dados criado se não existir: {banco}')
