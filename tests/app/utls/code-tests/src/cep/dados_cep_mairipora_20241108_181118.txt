@@ -1,2 +1,0 @@
-cep;logradouro;bairro;localidade;uf;ibge;gia;ddd;siafi
-07605-700;Rodovia Prefeito Luiz Salomao Chamma;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
