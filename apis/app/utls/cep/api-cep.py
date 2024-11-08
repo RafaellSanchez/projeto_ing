@@ -65,17 +65,17 @@ for lista in listas:
             })
         
         
-        print('transformando em um dataframe')
-        #salvar cada iteração em uma dataframe e depois salva-lo em um arquivo txt delimitado 
-        df = pd.DataFrame(dados_lista)
-        
-        mensagem(f'Preparando para salvar: {lista}')
-        caminho = '/workspaces/projeto_ing/apis/app/src/cep/'
-        arquivo = f'dados_cep_mairipora_{lista}_{timestamp}.txt'
-        
-        df.to_csv(f'{caminho}{arquivo}', sep=';', index=False)
-        print(f'Arquivo salvo: {arquivo}')
-        print(f'Caminho: {caminho}')
+    print('transformando em um dataframe')
+    #salvar cada iteração em uma dataframe e depois salva-lo em um arquivo txt delimitado 
+    df = pd.DataFrame(dados_lista)
+    
+    mensagem(f'Preparando para salvar: {lista}')
+    caminho = '/workspaces/projeto_ing/apis/app/src/cep/'
+    arquivo = f'dados_cep_mairipora_{lista}_{timestamp}.txt'
+    
+    df.to_csv(f'{caminho}{arquivo}', sep=';', index=False)
+    print(f'Arquivo salvo: {arquivo}')
+    print(f'Caminho: {caminho}')
 
 
 mensagem('Codigo finalziado!')
