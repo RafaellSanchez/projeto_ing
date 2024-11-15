@@ -94,3 +94,7 @@ def cripto_dados(caminho, chave=None, cipher_suite=None, arquivocript=None, deli
     except Exception as e:
         print(f"Ocorreu um erro ao processar o arquivo: {e}")
 
+def mensagem(msg):
+    print('-' *25)
+    print(msg)
+    print('-' *25)

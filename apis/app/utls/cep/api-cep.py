@@ -2,14 +2,17 @@ import requests
 import pandas as pd
 import time
 from datetime import datetime
+import os
+import shutil
+import importlib
+import sys
+
+sys.path.append("/../../utils/")
+sys.path.append("/workspaces/projeto_ing/utils/")
+from helpers import mensagem
 
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-
-#função para mensagem
-def mensagem(msg):
-    print('-' *25)
-    print(msg)
-    print('-' *25)
+arquivos = '/workspaces/projeto_ing/apis/app/src/cep/'
 
 time.sleep(3)
 mensagem('Iniciando aplicação!')
@@ -64,7 +67,6 @@ for lista in listas:
             
             })
         
-        
     print('transformando em um dataframe')
     #salvar cada iteração em uma dataframe e depois salva-lo em um arquivo txt delimitado 
     df = pd.DataFrame(dados_lista)
@@ -78,4 +80,55 @@ for lista in listas:
     print(f'Caminho: {caminho}')
 
 
-mensagem('Codigo finalziado!')
+mensagem('api finalizada!')
+
+mensagem('iniciando concatenacao')
+df_lista = []
+
+for f in os.listdir(arquivos):
+    if f.endswith('.txt'):
+        caminho_arquivo = os.path.join(arquivos, f)
+        print(f'Lendo arquivo: {f}')
+
+        try:
+            df = pd.read_csv(caminho_arquivo, sep=';')
+            df_lista.append(df)
+        except pd.errors.EmptyDataError:
+            print(f"Aviso: O arquivo '{f}' está vazio e será ignorado.")
+        
+if df_lista:
+    df_concat = pd.concat(df_lista, ignore_index=True)
+    caminho = '/workspaces/projeto_ing/apis/app/src/cep/'
+    arquivo = f'dados_cep_concat_{timestamp}.txt'
+    
+    df_concat.to_csv(f'{caminho}{arquivo}', sep=';', index=False)
+    print(f'Arquivo salvo: {arquivo}')
+    print(f'Caminho: {caminho}')
+else:
+    print("Nenhum arquivo válido foi encontrado para concatenação.")
+
+mensagem('movendo arquivos para bckup')
+
+files = '/workspaces/projeto_ing/apis/app/src/cep/'
+dest = '/workspaces/projeto_ing/apis/app/src/backp/'
+key = 'mairipora'
+list_file = os.listdir(files)
+# print(list_file)
+
+try:
+    
+    for root, dirs, file in os.walk(files):
+        print(f'procurando em: {root}')
+        for nome_arquivo in file:
+            print(f'verificando arquivo: {nome_arquivo}')
+            if key in nome_arquivo:
+                caminho_completo = os.path.join(root, nome_arquivo)
+                print(f'arquivo contendo a chave encontrado: {caminho_completo}')
+                
+                shutil.move(caminho_completo, dest)
+                print('arquivos contendo a chave movidos para backup')
+            else:
+                print('arquivos não encontrados')
+
+except FileExistsError as e:
+    print(e)
