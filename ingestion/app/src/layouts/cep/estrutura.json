@@ -1,11 +1,11 @@
 [
     {
-      "nome_arquivo": "resultado_cepavenidamairipora_",
-      "descricao": "descricao do cep avenida mairipora",
+      "nome_arquivo": "cep_concat_",
+      "descricao": "descricao do cep mairipora",
       "chave": {
-        "palavra_chave": "cepavenidamairipora",
+        "palavra_chave": "cep",
         "banco": "banco_cep.db",
-        "tabela": "tabela_cepavenidamairipora"
+        "tabela": "tabela_cep"
       }
     }
 ]
