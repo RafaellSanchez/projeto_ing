@@ -10,3 +10,4 @@ modelo_vw_20240821_225259.txt
 dados_geo_2024-07-15.txt
 dados_geo_2024-07-16.txt
 dados_cep_concat_20241115_124729.txt
+resultado_marcas_20241124_181228.txt
