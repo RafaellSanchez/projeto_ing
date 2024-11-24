@@ -5,3 +5,8 @@
 
 -- desenvolvendo
   5- organizar camada medalion sqlite
+     bronze - banco_geo 
+     bronze - banco_cep 
+       silver - localizacao - OK
+     
+     bronze - banco_car 
