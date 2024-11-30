@@ -7,5 +7,14 @@
         "banco": "banco_geo.db",
         "tabela": "tabela_geo"
       }
+    },
+    {
+      "nome_arquivo": "dados_detalhegeo",
+      "descricao": "tabela geolocalizacao detalhada",
+      "chave": {
+        "palavra_chave": "detalhegeo",
+        "banco": "banco_geo.db",
+        "tabela": "tabela_detalhegeo"
+      }
     }
 ]

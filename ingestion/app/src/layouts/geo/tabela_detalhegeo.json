@@ -1,0 +1,7 @@
+{
+    "colunas":[
+        {"nome": "localizacao_completa", "tipo": "string"},
+        {"nome": "dados_detalhados",     "tipo": "string"},
+        {"nome": "code",                 "tipo": "string"}
+    ]
+}

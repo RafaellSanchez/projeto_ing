@@ -13,3 +13,5 @@ dados_cep_concat_20241115_124729.txt
 resultado_marcas_20241124_181228.txt
 modelo_vw_20241130_020640.txt
 resultado_calendario_20241130_022248.txt
+dados_detalhegeo_2024-11-30.txt
+dados_detalhegeo_2024-11-30.txt
