@@ -1,3 +1,6 @@
+sys.path.append("/../../utils/")
+sys.path.append("/workspaces/projeto_ing/utils/")
+
 import requests
 import pandas as pd
 import time
@@ -6,9 +9,6 @@ import os
 import shutil
 import importlib
 import sys
-
-sys.path.append("/../../utils/")
-sys.path.append("/workspaces/projeto_ing/utils/")
 from helpers import mensagem
 
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
