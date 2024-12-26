@@ -3,6 +3,7 @@ from faker import Faker
 from datetime import datetime
 
 timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
+digtao = datetime.now().strftime('%Y-%m-%d')
 
 fake = Faker('pt_BR')
 dados = []
@@ -47,7 +48,8 @@ for _ in range(100):
         'credt_exp': fake_card_exp,
         'cvv': fake_card_secrt,
         'data': fake_dt,
-        'data_hora': fake_hr
+        'data_hora': fake_hr,
+        'digtap_ptcap': digtao
         
     })
 df = pd.DataFrame(dados)
