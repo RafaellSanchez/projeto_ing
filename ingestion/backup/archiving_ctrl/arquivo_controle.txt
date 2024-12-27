@@ -16,3 +16,4 @@ resultado_calendario_20241130_022248.txt
 dados_detalhegeo_2024-11-30.txt
 dados_detalhegeo_2024-11-30.txt
 dados_bank_20241209172538.txt
+dados_fakes_20241227214359.txt

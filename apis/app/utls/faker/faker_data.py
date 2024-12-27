@@ -49,7 +49,7 @@ for _ in range(100):
         'cvv': fake_card_secrt,
         'data': fake_dt,
         'data_hora': fake_hr,
-        'digtap_ptcap': digtao
+        'digtap_ptcao': digtao
         
     })
 df = pd.DataFrame(dados)
