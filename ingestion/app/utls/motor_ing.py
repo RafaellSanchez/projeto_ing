@@ -4,15 +4,78 @@ import sqlite3
 import pandas as pd
 import shutil
 from datetime import datetime
+import time
 
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 data_igtao = datetime.now().strftime('%Y-%m-%d')
+datahoje = str(data_igtao)
+print(datahoje)
 
 caminho_backup = "/workspaces/projeto_ing/ingestion/backup/backp/"
 ctrl_ing = "/workspaces/projeto_ing/ingestion/backup/archiving_ctrl/arquivo_controle.txt"
 landing = "/workspaces/projeto_ing/ingestion/app/src/landing/"
 layouts = "/workspaces/projeto_ing/ingestion/app/src/layouts/"
+files = '/workspaces/projeto_ing/apis/app/src/'
+controle = '/workspaces/projeto_ing/ingestion/backup/archiving_ctrl/arquivo_controle.txt'
 
+
+time.sleep(3)
+print('===============================================')
+print('iniciando movimentação de arquivos')
+list = os.listdir(files)
+print(list)
+print(controle)
+print('MOVENDO ARQUIVOS')
+
+
+for item in list:
+    accept = os.path.join(files, item)
+    print(f'item encontrado no diretório: {item}')
+    subconteudo = os.listdir(accept)
+    print(f'conteudo: {subconteudo}')
+    print('--------------------------------------')
+
+    for root, dirs, lista in os.walk(files):
+        print(f'proncurando em: {root}')
+        print(f'----------------------')
+        print(f'dirs: {dirs}')
+        for nome_arquivo in lista:
+            print(f'verificando nome do arquivo: {nome_arquivo}')
+            if nome_arquivo in nome_arquivo:
+                caminho_completo = os.path.join(root, nome_arquivo)
+                print(f'caminho completo: {caminho_completo}')
+                
+                sep_name = os.path.basename(nome_arquivo)
+                print(f'nome separado do arquivo: {sep_name}')
+                print(f'------------------------------------')
+                
+                sep_data = sep_name.split('_')[3:4]
+                print(f'separando data: {sep_data}')
+                if str(sep_data) >= str(datahoje):
+                    with open(controle, 'r+') as ctrl:
+                        conteudo_ctrl = ctrl.readlines()
+                        print(f'conteudo do arquivo de controle: {conteudo_ctrl}')
+                        
+                        if sep_name + '\n' not in conteudo_ctrl:            
+                            with open(controle, 'a') as control_move:
+                                control_move.write(f'{nome_arquivo}\n')
+                                print('salvando nome do arquivo no controle')
+
+                            print(f'arquivo que sera movido: {nome_arquivo}')
+                            shutil.copy(caminho_completo, landing)
+                            print(f'Arquivo enviado: {caminho_completo}')
+                            print(f'Destino: {landing}')
+                        else:
+                            print('----------------------------------------------')
+                            print(f'Arquivo já existe no controle: {nome_arquivo}')
+                               
+                else:
+                    print('Erro no formato do arquivo')
+print('codigo finalizado!')
+print('===============================================')
+
+time.sleep(3)
+print('Iniciando ingestão de arquivos')
 read_landing = os.listdir(landing)
 print("Conteúdos do diretório 'landing':", read_landing)
 read_layouts = os.listdir(layouts)
