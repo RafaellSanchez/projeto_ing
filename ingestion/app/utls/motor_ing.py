@@ -215,6 +215,10 @@ try:
                                     else:
                                         print('Chave não encontrada no arquivo')
                                     break
+                                else:
+                                    print('Arquivo fora dos padrões')
+                                    caminho_completo = os.path.join(root, nome_arquivo)
+                                    print(f'Arquivo não contem a chave: {caminho_completo}')
+                                    shutil.move(caminho_completo, caminho_backup)
 except Exception as e:
     print(f"Erro: {e}")
-
