@@ -17,3 +17,5 @@ dados_detalhegeo_2024-11-30.txt
 dados_detalhegeo_2024-11-30.txt
 dados_bank_20241209172538.txt
 dados_fakes_20241227214359.txt
+dados_cript.bin
+resultado_cep_mairiporã_20241014_231236.txt

@@ -98,3 +98,88 @@ def mensagem(msg):
     print('-' *25)
     print(msg)
     print('-' *25)
+    
+    
+    
+    
+import os
+import shutil
+from datetime import datetime
+
+def envio_arquivos(files_dir, landing_dir, controle_path):
+    """
+    Função para enviar arquivos para um diretório de destino (landing),
+    verificando um arquivo de controle para evitar duplicatas.
+    
+    Args:
+        files_dir (str): Diretório onde os arquivos estão localizados.
+        landing_dir (str): Diretório de destino para envio dos arquivos.
+        controle_path (str): Caminho para o arquivo de controle.
+    """
+    # Gerar timestamp e data atual
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    datahoje = datetime.now().strftime('%Y%m%d')
+    print(f"Data de hoje: {datahoje}")
+
+    # Listar subdiretórios no diretório de origem
+    subdirs = os.listdir(files_dir)
+    print(f"Subdiretórios encontrados: {subdirs}")
+
+    for item in subdirs:
+        item_path = os.path.join(files_dir, item)
+        print(f"Verificando item no diretório: {item}")
+        
+        if os.path.isdir(item_path):
+            subconteudo = os.listdir(item_path)
+            print(f"Conteúdo do subdiretório {item}: {subconteudo}")
+        print('--------------------------------------')
+
+    # Processar arquivos
+    for root, _, files in os.walk(files_dir):
+        print(f"Procurando em: {root}")
+        for nome_arquivo in files:
+            print(f"Verificando arquivo: {nome_arquivo}")
+            
+            caminho_completo = os.path.join(root, nome_arquivo)
+            sep_name = os.path.basename(nome_arquivo)
+            print(f"Nome do arquivo: {sep_name}")
+
+            # Extrair data do nome do arquivo (assume formato esperado)
+            try:
+                sep_data = sep_name.split('_')[3:4]
+                print(f'separando data: {sep_data}')
+            except IndexError:
+                print(f"Erro ao separar data no nome do arquivo: {sep_name}")
+                continue
+ 
+            if str(sep_data) >= str(datahoje):
+                with open(controle_path, 'r+') as ctrl:
+                    conteudo_ctrl = ctrl.readlines()
+                    print(f'conteudo do arquivo de controle: {conteudo_ctrl}')
+                    
+                    if sep_name + '\n' not in conteudo_ctrl:            
+                        with open(controle_path, 'a') as control_move:
+                            control_move.write(f'{nome_arquivo}\n')
+                            print('salvando nome do arquivo no controle')
+
+                        print(f'arquivo que sera movido: {nome_arquivo}')
+                        shutil.copy(caminho_completo, landing_dir)
+                        print(f'Arquivo enviado: {caminho_completo}')
+                        print(f'Destino: {landing_dir}')
+                    else:
+                        print('----------------------------------------------')
+                        print(f'Arquivo já existe no controle: {nome_arquivo}')
+            else:
+                print(f"Erro no formato ou data do arquivo: {sep_name}")
+    print("Processo finalizado!")
+
+
+
+if __name__ == "__main__":
+    # Diretórios e arquivo de controle
+    files_dir = '/workspaces/projeto_ing/tests/app/src/teste/'
+    landing_dir = '/workspaces/projeto_ing/tests/app/src/teste_landing/'
+    controle_path = '/workspaces/projeto_ing/ingestion/backup/archiving_ctrl/arquivo_controle.txt'
+    
+    # Chamada da função
+    envio_arquivos(files_dir, landing_dir, controle_path)
