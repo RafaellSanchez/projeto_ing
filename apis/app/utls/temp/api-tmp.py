@@ -78,7 +78,7 @@ print(df)
 
 dt = datetime.now().strftime('%Y%m%d_%H%M%S')
 save = '/workspaces/projeto_ing/apis/app/src/temp/'
-arq = f'arquivo_temp_{dt}.txt'
+arq = f'resultado_weather_{dt}.txt'
 
 df.to_csv(f'{save}{arq}', sep=';', index=False)
 print(f'df salvo no caminho: {save}')

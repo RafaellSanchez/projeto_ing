@@ -153,12 +153,18 @@ try:
                                             
                                             if caminho_completo.endswith('.txt'):
                                                 df = pd.read_csv(caminho_completo, delimiter=';', skiprows=[0], names=[col['nome'] for col in config_colunas['colunas'] if 'nome' in col])
+                                                # df['nome_arquivo'] = nome_arquivo
+                                                # datahora = nome_arquivo['17:32']
+                                                # df['data_arquivo'] = datahora
                                                 print(f'dados a carregar:{df}')
                                                 print('estrutura de colunas txt:')
                                                 print(df.columns)
                                                 print('=====================')
                                             elif caminho_completo.endswith('.csv'):
                                                 df = pd.read_csv(caminho_completo, skiprows=[0], names=[col['nome'] for col in config_colunas['colunas'] if 'nome' in col])
+                                                # df['nome_arquivo'] = nome_arquivo
+                                                # datahora = nome_arquivo['17:32']
+                                                # df['data_arquivo'] = datahora
                                                 print(f'dados a carregar:{df}')
                                                 print('estrutura de colunas csv:')
                                                 print(df.columns)
