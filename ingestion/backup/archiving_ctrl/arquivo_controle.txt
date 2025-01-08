@@ -57,3 +57,6 @@ tempo_Rio de Janeiro_20240928.txt
 dados_fakes_20241223143434.txt
 resultado_mega_20241230_150630.txt
 dados_fakes_20250103144753.txt
+resultado_weather_20250108_163335.txt
+arquivo_resultemp_20250108_162710.txt
+resultado_weather_20250108_163946.txt

@@ -1,0 +1,15 @@
+{
+    "colunas": [
+        {"nome":"cidade" ,"tipo": "string"},
+        {"nome":"pais" ,"tipo": "string"},
+        {"nome":"temperatura","tipo": "string"},
+        {"nome":"temp_max" ,"tipo": "string"},
+        {"nome":"temp_min" ,"tipo": "string"},
+        {"nome":"unidade" ,"tipo": "string"},
+        {"nome":"prob_chuva" ,"tipo": "string"},
+        {"nome":"data" ,"tipo": "string"},
+        {"nome":"latitude" ,"tipo": "string"},
+        {"nome":"longitude" ,"tipo": "string"},
+        {"nome":"tempo" ,"tipo": "string"}
+    ]
+}
