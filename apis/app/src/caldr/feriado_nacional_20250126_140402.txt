@@ -1,0 +1,14 @@
+feriado;tipo;data;data_hora_inclusao
+Confraternização mundial;national;2024-01-01;20250126_140402
+Carnaval;national;2024-02-13;20250126_140402
+Sexta-feira Santa;national;2024-03-29;20250126_140402
+Páscoa;national;2024-03-31;20250126_140402
+Tiradentes;national;2024-04-21;20250126_140402
+Dia do trabalho;national;2024-05-01;20250126_140402
+Corpus Christi;national;2024-05-30;20250126_140402
+Independência do Brasil;national;2024-09-07;20250126_140402
+Nossa Senhora Aparecida;national;2024-10-12;20250126_140402
+Finados;national;2024-11-02;20250126_140402
+Proclamação da República;national;2024-11-15;20250126_140402
+Dia da consciência negra;national;2024-11-20;20250126_140402
+Natal;national;2024-12-25;20250126_140402
