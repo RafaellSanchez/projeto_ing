@@ -1,10 +1,15 @@
 import os
+import sys
 import json
 import sqlite3
 import pandas as pd
 import shutil
 from datetime import datetime
 import time
+
+sys.path.append(os.path.abspath('/workspaces/projeto_ing/utils/shered_utils/'))
+from sql_conn import log_ingestao
+
 
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 data_igtao = datetime.now().strftime('%Y-%m-%d')
@@ -213,7 +218,12 @@ try:
                                             conn.close()
                                             print("Ingestão de dados concluída com sucesso!")
                                             print("====================================")
-                                            
+                                        
+                                        print('gravando log ingestao db')
+                                        log_save = sav
+                                        log_ingestao(log_igtao_tb= log_save)
+
+                                         
                                         shutil.move(caminho_completo, caminho_backup)
                                         print(f'Arquivo enviado para backup: {caminho_completo}')
                                         print(f'Destino: {caminho_backup}')
@@ -221,10 +231,10 @@ try:
                                     else:
                                         print('Chave não encontrada no arquivo')
                                     break
-                                # else:
-                                #     print('Arquivo fora dos padrões')
-                                #     caminho_completo = os.path.join(root, nome_arquivo)
-                                #     print(f'Arquivo não contem a chave: {caminho_completo}')
-                                #     shutil.move(caminho_completo, caminho_backup)
+                                else:
+                                    print('Arquivo fora dos padrões')
+                                    caminho_completo = os.path.join(root, nome_arquivo)
+                                    print(f'Arquivo não contem a chave: {caminho_completo}')
+                                    shutil.move(caminho_completo, caminho_backup)
 except Exception as e:
     print(f"Erro: {e}")

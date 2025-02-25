@@ -60,3 +60,5 @@ dados_fakes_20250103144753.txt
 resultado_weather_20250108_163335.txt
 arquivo_resultemp_20250108_162710.txt
 resultado_weather_20250108_163946.txt
+bank_world_20250126_144134.txt
+feriado_nacional_20250126_140402.txt
