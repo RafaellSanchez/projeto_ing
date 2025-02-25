@@ -5,6 +5,10 @@ from pymongo import MongoClient
 import sqlite3
 from cryptography.fernet import Fernet
 from datetime import datetime
+import importlib
+import sql_conn
+importlib.reload(sql_conn)
+
 
 def mensagem(msg):
     print('-' *25)
