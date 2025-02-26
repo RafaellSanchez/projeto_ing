@@ -83,13 +83,30 @@ def conectar_mongo (uri, db, collection ):
     return uri, client, collection
 
 
-def conectar_sqlite(banco, caminho_banco=None):
+def conectar_bronze (db_sqlite, caminho_bronze=None, show_tables_query=None):
     import sqlite3
-    # Se o caminho do banco não for fornecido, usa o caminho padrão
-    if caminho_banco is None:
-        caminho_banco = f"/workspaces/projeto_ing/database/{banco}"
-    
-    conn = sqlite3.connect(caminho_banco)
+    caminho_bronze = f"/workspaces/projeto_ing/database/sqlite/bronze/{db_sqlite}"
+    conn = sqlite3.connect(caminho_bronze)
     cursor = conn.cursor()
+    print(f'conectado ao sqlite bronze: {db_sqlite}')
     
-    return conn, cursor, caminho_banco
+    show_tables_query = "SELECT name FROM sqlite_master WHERE type='table';"
+    cursor.execute(show_tables_query)
+
+    tables = cursor.fetchall()
+    print("Tabelas no banco de dados:")
+    for table in tables:
+        print(table[0])
+    
+    return conn, cursor, caminho_bronze
+
+# def conectar_sqlite(banco, caminho_banco=None):
+#     import sqlite3
+#     # Se o caminho do banco não for fornecido, usa o caminho padrão
+#     if caminho_banco is None:
+#         caminho_banco = f"/workspaces/projeto_ing/database/sqlite/bronze/{banco}"
+    
+#     conn = sqlite3.connect(caminho_banco)
+#     cursor = conn.cursor()
+    
+#     return conn, cursor, caminho_banco
