@@ -8,8 +8,8 @@ import pandas as pd
 
 def conectar_mongo (uri, db, collection ):
     from pymongo import MongoClient
-    
-    uri = 'mongodb+srv://rafaelsanchesz:OYm5fyyVcgAObf35@cluster-githubsanchez.vgq0k.mongodb.net/'
+    uri = 'mongodb+srv://rafaelsanchez:1bHoI3DTdqfa6tNU@cluster001dev.vgq0k.mongodb.net/'
+    # uri = 'mongodb+srv://rafaelsanchesz:OYm5fyyVcgAObf35@cluster-githubsanchez.vgq0k.mongodb.net/'
     client = MongoClient(uri)
     db = client['meu_banco']
     collection = db['minha_colecao']
@@ -33,7 +33,7 @@ def conectar_sqlite(banco, caminho_banco=None):
     import sqlite3
     # Se o caminho do banco não for fornecido, usa o caminho padrão
     if caminho_banco is None:
-        caminho_banco = f"/workspaces/projeto_ing/database/{banco}"
+        caminho_banco = f"/workspaces/projeto_ing/database/sqlite/bronze/{banco}"
     
     conn = sqlite3.connect(caminho_banco)
     cursor = conn.cursor()
@@ -45,7 +45,7 @@ def consult_sqlite(banco, caminho_banco=None, tabela=None, query=None):
     import sqlite3
     
     if caminho_banco is None:
-        caminho_banco = f"/workspaces/projeto_ing/database/{banco}"
+        caminho_banco = f"/workspaces/projeto_ing/database/sqlite/bronze/{banco}"
     
     conn = sqlite3.connect(caminho_banco)
     cursor = conn.cursor()
