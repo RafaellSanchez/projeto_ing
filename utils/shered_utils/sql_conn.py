@@ -83,7 +83,7 @@ def conectar_mongo (uri, db, collection ):
     return uri, client, collection
 
 
-def conectar_bronze (db_sqlite, caminho_bronze=None, show_tables_query=None):
+def conectar_bronze (db_sqlite, caminho_bronze=None, show_tables_query=None, tabela=None, query=None):
     import sqlite3
     caminho_bronze = f"/workspaces/projeto_ing/database/sqlite/bronze/{db_sqlite}"
     conn = sqlite3.connect(caminho_bronze)
@@ -97,8 +97,43 @@ def conectar_bronze (db_sqlite, caminho_bronze=None, show_tables_query=None):
     print("Tabelas no banco de dados:")
     for table in tables:
         print(table[0])
+        
+    if query is None:
+        if tabela is None:
+            raise ValueError("A tabela deve ser fornecida se a query não for especificada.")
+        query = f"select * from {tabela}"
     
-    return conn, cursor, caminho_bronze
+    cursor.execute(query)
+    consulta = cursor.fetchall()
+    
+    for resultado in consulta:
+        print(resultado)
+    
+    return conn, cursor, caminho_bronze, consulta
+
+# def consult_sqlite(banco, caminho_banco=None, tabela=None, query=None):
+#     import sqlite3
+    
+#     if caminho_banco is None:
+#         caminho_banco = f"/workspaces/projeto_ing/database/sqlite/bronze/{banco}"
+    
+#     conn = sqlite3.connect(caminho_banco)
+#     cursor = conn.cursor()
+    
+#     if query is None:
+#         if tabela is None:
+#             raise ValueError("A tabela deve ser fornecida se a query não for especificada.")
+#         query = f'SELECT * FROM {tabela}'
+    
+#     cursor.execute(query)
+#     consulta = cursor.fetchall()
+    
+#     for resultado in consulta:
+#         print(resultado)
+        
+#     conn.close()
+    
+    # return consulta
 
 # def conectar_sqlite(banco, caminho_banco=None):
 #     import sqlite3
