@@ -109,7 +109,8 @@ def conectar_bronze (db_sqlite, caminho_bronze=None, show_tables_query=None, tab
     for resultado in consulta:
         print(resultado)
     
-    return conn, cursor, caminho_bronze, consulta
+    return conn, cursor, caminho_bronze, consulta, query
+
 
 # def consult_sqlite(banco, caminho_banco=None, tabela=None, query=None):
 #     import sqlite3
