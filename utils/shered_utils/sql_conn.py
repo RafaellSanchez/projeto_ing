@@ -8,7 +8,7 @@ from datetime import datetime
 import importlib
 import sql_conn
 importlib.reload(sql_conn)
-
+import os
 
 def mensagem(msg):
     print('-' *25)
@@ -69,18 +69,47 @@ def log_ingestao(log_igtao_tb):
         conn_log.close()
         
 
-def conectar_mongo (uri, db, collection ):
+def conectar_mongodb(file=None):
     """
-    Funcao para conectar banco de dados mongodb
+    Conexão ao MongoDB Atlas.
+    Se o parâmetro 'file' não for fornecido, tenta gerar um arquivo padrão.
     """
-    from pymongo import MongoClient
-    
-    uri = 'mongodb+srv://rafaelsanchesz:OYm5fyyVcgAObf35@cluster-githubsanchez.vgq0k.mongodb.net/'
+    uri = "mongodb+srv://rafaelsanchesz:OYm5fyyVcgAObf35@cluster001dev.vgq0k.mongodb.net/"
+
     client = MongoClient(uri)
-    db = client['meu_banco']
-    collection = db['minha_colecao']
+    db = client['dev_mongo001_rf']
+    collection = db['collection_test_mng_dev']
     
-    return uri, client, collection
+    try:
+        client.admin.command('ping')
+        print("Conexão bem-sucedida com o MongoDB!")
+    except Exception as e:
+        print(f"Erro ao conectar ao MongoDB: {e}")
+    
+    if file is None:
+        file = '/workspaces/projeto_ing/tests/app/utls/code-tests/backup/teste.txt'
+        print(f"Nenhum arquivo foi fornecido. Usando o arquivo padrão: {file}")
+    
+    if os.path.exists(file):
+        data = pd.read_csv(file, sep=';', encoding='utf-8')
+        print(f"Arquivo {file} carregado com sucesso!")
+        print(f"dados: {data}")
+        
+        data = data.where(pd.notna(data), None)
+        data.reset_index(drop=True, inplace=True)
+        
+        data_dict = data.to_dict("records")
+        
+        if data_dict:
+            collection.insert_many(data_dict)
+            print("Dados inseridos com sucesso!")
+        else:
+            print("Nenhum dado para inserir.")
+    else:
+        print(f"Erro: O arquivo {file} não foi encontrado.")
+    
+    return uri, client, collection, file
+
 
 
 def conectar_bronze (db_sqlite, caminho_bronze=None, show_tables_query=None, tabela=None, query=None):
