@@ -68,110 +68,105 @@ def log_ingestao(log_igtao_tb):
     finally:
         conn_log.close()
         
-
-def conectar_mongodb(file=None):
+ 
+def conectar_mongodb():
     """
-    Conexão ao MongoDB Atlas.
-    Se o parâmetro 'file' não for fornecido, tenta gerar um arquivo padrão.
+    Conecta ao MongoDB e retorna a coleção.
+    
+    Retorna:
+    - client (MongoClient): Cliente MongoDB.
+    - collection (Collection): Coleção MongoDB para inserção.
     """
-    uri = "mongodb+srv://rafaelsanchesz:OYm5fyyVcgAObf35@cluster001dev.vgq0k.mongodb.net/"
 
+    uri = os.getenv("MONGO_URI", "mongodb+srv://rafaelsanchesz:OYm5fyyVcgAObf35@cluster001dev.vgq0k.mongodb.net/")
     client = MongoClient(uri)
     db = client['dev_mongo001_rf']
     collection = db['collection_test_mng_dev']
-    
+
     try:
         client.admin.command('ping')
         print("Conexão bem-sucedida com o MongoDB!")
+        return client, collection
     except Exception as e:
         print(f"Erro ao conectar ao MongoDB: {e}")
-    
-    if file is None:
-        file = '/workspaces/projeto_ing/tests/app/utls/code-tests/backup/teste.txt'
-        print(f"Nenhum arquivo foi fornecido. Usando o arquivo padrão: {file}")
-    
-    if os.path.exists(file):
-        data = pd.read_csv(file, sep=';', encoding='utf-8')
-        print(f"Arquivo {file} carregado com sucesso!")
-        print(f"dados: {data}")
-        
-        data = data.where(pd.notna(data), None)
-        data.reset_index(drop=True, inplace=True)
-        
-        data_dict = data.to_dict("records")
-        
-        if data_dict:
-            collection.insert_many(data_dict)
-            print("Dados inseridos com sucesso!")
-        else:
-            print("Nenhum dado para inserir.")
-    else:
-        print(f"Erro: O arquivo {file} não foi encontrado.")
-    
-    return uri, client, collection, file
+        return None, None
 
 
+def conectar_bronze(db_sqlite, tabela=None, query=None):
+    """
+    Conecta ao banco de dados SQLite e retorna os resultados de uma consulta.
+    
+    Parâmetros:
+    - db_sqlite (str): Nome do banco SQLite.
+    - tabela (str): Nome da tabela a ser consultada (obrigatório se query não for especificada).
+    - query (str, opcional): Consulta SQL personalizada.
 
-def conectar_bronze (db_sqlite, caminho_bronze=None, show_tables_query=None, tabela=None, query=None):
-    import sqlite3
+    Retorna:
+    - conn: Conexão com o SQLite.
+    - cursor: Cursor do banco.
+    - caminho_bronze: Caminho do banco SQLite.
+    - consulta: Resultado da consulta (lista de tuplas).
+    - colunas: Nome das colunas retornadas.
+    - query: A consulta SQL executada.
+    """
+
     caminho_bronze = f"/workspaces/projeto_ing/database/sqlite/bronze/{db_sqlite}"
     conn = sqlite3.connect(caminho_bronze)
     cursor = conn.cursor()
-    print(f'conectado ao sqlite bronze: {db_sqlite}')
-    
+    print(f'Conectado ao SQLite Bronze: {db_sqlite}')
+
     show_tables_query = "SELECT name FROM sqlite_master WHERE type='table';"
     cursor.execute(show_tables_query)
-
     tables = cursor.fetchall()
+
     print("Tabelas no banco de dados:")
     for table in tables:
         print(table[0])
-        
+    
     if query is None:
         if tabela is None:
             raise ValueError("A tabela deve ser fornecida se a query não for especificada.")
-        query = f"select * from {tabela}"
+        query = f"SELECT * FROM {tabela}"
     
     cursor.execute(query)
     consulta = cursor.fetchall()
-    
-    for resultado in consulta:
-        print(resultado)
-    
-    return conn, cursor, caminho_bronze, consulta, query
+
+    colunas = [desc[0] for desc in cursor.description]
+
+    return conn, cursor, caminho_bronze, consulta, colunas, query
 
 
-# def consult_sqlite(banco, caminho_banco=None, tabela=None, query=None):
-#     import sqlite3
-    
-#     if caminho_banco is None:
-#         caminho_banco = f"/workspaces/projeto_ing/database/sqlite/bronze/{banco}"
-    
-#     conn = sqlite3.connect(caminho_banco)
-#     cursor = conn.cursor()
-    
-#     if query is None:
-#         if tabela is None:
-#             raise ValueError("A tabela deve ser fornecida se a query não for especificada.")
-#         query = f'SELECT * FROM {tabela}'
-    
-#     cursor.execute(query)
-#     consulta = cursor.fetchall()
-    
-#     for resultado in consulta:
-#         print(resultado)
-        
-#     conn.close()
-    
-    # return consulta
+def enviar_para_mongodb(consulta, colunas, mongo_collection):
+    """
+    Converte os dados do SQLite em um DataFrame e insere no MongoDB.
 
-# def conectar_sqlite(banco, caminho_banco=None):
-#     import sqlite3
-#     # Se o caminho do banco não for fornecido, usa o caminho padrão
-#     if caminho_banco is None:
-#         caminho_banco = f"/workspaces/projeto_ing/database/sqlite/bronze/{banco}"
+    Parâmetros:
+    - consulta (list of tuples): Dados retornados do SQLite.
+    - colunas (list): Lista com os nomes das colunas.
+    - mongo_collection (Collection): Coleção do MongoDB onde os dados serão inseridos.
+    """
     
-#     conn = sqlite3.connect(caminho_banco)
-#     cursor = conn.cursor()
+    if not consulta:
+        print("Nenhum dado para inserir no MongoDB.")
+        return
     
-#     return conn, cursor, caminho_banco
+    df = pd.DataFrame(consulta, columns=colunas)
+
+    df = df.where(pd.notna(df), None)
+    
+    data_dict = df.to_dict("records")
+    mongo_collection.insert_many(data_dict)
+    print(data_dict)
+    
+    print("Dados inseridos com sucesso no MongoDB!")
+
+###### EXEMPLO DE EXECUÇÃO #############################
+
+# conn, cursor, caminho_bronze, consulta, colunas, query = conectar_bronze(db_sqlite="bnc_log_igtao.db", tabela="tb_log_igtao")
+
+# client, collection = conectar_mongodb()
+
+# if collection is not None:
+#     enviar_para_mongodb(consulta, colunas, collection)
+
+#########################################################
