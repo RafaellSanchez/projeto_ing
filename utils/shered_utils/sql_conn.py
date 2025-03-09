@@ -157,7 +157,6 @@ def enviar_para_mongodb(consulta, colunas, mongo_collection):
     data_dict = df.to_dict("records")
     mongo_collection.insert_many(data_dict)
     print(data_dict)
-    
     print("Dados inseridos com sucesso no MongoDB!")
 
 ###### EXEMPLO DE EXECUÇÃO #############################
