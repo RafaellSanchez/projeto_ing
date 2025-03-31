@@ -151,13 +151,13 @@ def enviar_para_mongodb(consulta, colunas, mongo_collection):
         return
     
     df = pd.DataFrame(consulta, columns=colunas)
-
     df = df.where(pd.notna(df), None)
     
     data_dict = df.to_dict("records")
     mongo_collection.insert_many(data_dict)
     print(data_dict)
     print("Dados inseridos com sucesso no MongoDB!")
+
 
 ###### EXEMPLO DE EXECUÇÃO #############################
 
