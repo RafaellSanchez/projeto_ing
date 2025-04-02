@@ -130,7 +130,6 @@ def conectar_bronze(db_sqlite, tabela=None, query=None):
     
     cursor.execute(query)
     consulta = cursor.fetchall()
-
     colunas = [desc[0] for desc in cursor.description]
 
     return conn, cursor, caminho_bronze, consulta, colunas, query
