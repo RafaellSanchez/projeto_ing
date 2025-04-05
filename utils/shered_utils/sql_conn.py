@@ -92,6 +92,7 @@ def conectar_mongodb():
         return None, None
 
 
+
 def conectar_bronze(db_sqlite, tabela=None, query=None):
     """
     Conecta ao banco de dados SQLite e retorna os resultados de uma consulta.
