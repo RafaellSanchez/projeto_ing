@@ -19,6 +19,3 @@ Utilizndo a função enviar_para_mongodb para envio do DataFrame para a collecti
 '''
 
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-
-
-
