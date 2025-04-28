@@ -32,7 +32,7 @@ def carregamento_landing(data_dict, path=None, file=None, resultado=None ):
     import sys
     
     if path is None:
-        path = '/workspaces/projeto_ing/tests/app/ambiente_test_ing/app/src/landing/'
+        path = '/workspaces/projeto_ing/apis/app/src/'
         print('caminho não informado')
         print('utilizando o padrão:')
         print(f'{path}')
@@ -46,7 +46,7 @@ def carregamento_landing(data_dict, path=None, file=None, resultado=None ):
         sav = os.path.basename(accept)
         print(f'Conteúdo a gravar: {sav}')
         
-        backp = '/workspaces/projeto_ing/tests/app/ambiente_test_ing/backup/arquivos_mongo.txt'
+        backp = '/workspaces/projeto_ing/ingestion/backup/archiving_ctrl/arquivo_controle_mongo.txt'
         with open(backp, 'r+') as controle_ingestao: 
             conteudo_load = controle_ingestao.readlines()
             print(f'Conteúdo do arquivo de controle de ingestão: {conteudo_load}')
