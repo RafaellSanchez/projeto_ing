@@ -22,8 +22,8 @@ Motor dedicado ao carregamento e envio de dados para o mongo.db
 Utilizndo a função conectar_mongo para conexão entre fontes
 Utilizndo a função conectar_bronze para realizar a transformação dos dados a serem enviados
 Utilizndo a função enviar_para_mongodb para envio do DataFrame para a collection
-
 '''
+
 # path = '/workspaces/projeto_ing/tests/app/ambiente_test_ing/app/src/landing/'
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 
