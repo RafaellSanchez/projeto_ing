@@ -187,3 +187,57 @@ if __name__ == "__main__":
   
    # Get the database
    dbname = get_database()
+
+
+def carregamento_landing(data_dict, path=None, file=None, resultado=None ):
+    import os
+    import sys
+    
+    if path is None:
+        path = '/workspaces/projeto_ing/tests/app/ambiente_test_ing/app/src/landing/'
+        print('caminho não informado')
+        print('utilizando o padrão:')
+        print(f'{path}')
+    
+    read_landing = os.listdir(path)
+    
+    for reads in read_landing:
+        accept = os.path.join(path, reads)
+        print(f'item encontrado: {accept}')
+        
+        sav = os.path.basename(accept)
+        print(f'Conteúdo a gravar: {sav}')
+        
+        backp = '/workspaces/projeto_ing/tests/app/ambiente_test_ing/backup/arquivos_mongo.txt'
+        with open(backp, 'r+') as controle_ingestao: 
+            conteudo_load = controle_ingestao.readlines()
+            print(f'Conteúdo do arquivo de controle de ingestão: {conteudo_load}')
+            
+            if sav + '\n' not in conteudo_load:
+                with open(backp, 'a') as controle_ingestao:
+                    controle_ingestao.write(f"{sav}\n")
+                    print(f'nomenclatura do arquivo salvo: {sav}')
+                    print('=================================')
+
+                if accept.endswith('.txt'):
+                    resultado = pd.read_csv(accept, delimiter=';')
+                    resultado = resultado.where(pd.notna(resultado), None)
+
+                    data_dict = resultado.to_dict("records")
+                    print(data_dict)
+                    print("Dados para inserir com sucesso no MongoDB!")
+
+                else:
+                    raise ValueError("Formato de arquivo não suportado")
+            else:
+                print('arquivo já inserido')
+
+    return data_dict
+
+#exemplo de uso
+# dbname = get_database()
+# collection_name = dbname["collection_test02_mng_dev"]
+
+# data_dict = carregamento_landing(data_dict)
+
+# collection_name.insert_many(data_dict)
