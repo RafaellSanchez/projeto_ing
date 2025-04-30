@@ -1,0 +1,12 @@
+tabela: usuarios
+colunas:
+  - nome: id
+    tipo: inteiro
+    obrigatorio: true
+    chave_primaria: true
+  - nome: nome
+    tipo: texto
+    obrigatorio: true
+  - nome: email
+    tipo: texto
+    obrigatorio: false
