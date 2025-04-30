@@ -181,6 +181,32 @@ if __name__ == "__main__":
    dbname = get_database()
 
 
+import sys
+import os
+from datetime import datetime
+import time
+import pandas as pd
+
+sys.path.append(os.path.abspath('/workspaces/projeto_ing/utils/shered_utils/'))
+
+from sql_conn import conectar_mongodb
+from sql_conn import conectar_bronze
+from sql_conn import enviar_para_mongodb
+from sql_conn import mensagem
+from sql_conn import get_database
+
+
+''' 
+Motor dedicado ao carregamento e envio de dados para o mongo.db
+
+Utilizndo a função conectar_mongo para conexão entre fontes
+Utilizndo a função conectar_bronze para realizar a transformação dos dados a serem enviados
+Utilizndo a função enviar_para_mongodb para envio do DataFrame para a collection
+
+'''
+# path = '/workspaces/projeto_ing/tests/app/ambiente_test_ing/app/src/landing/'
+timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+
 def carregamento_landing(data_dict, path=None, file=None, resultado=None ):
     import os
     import sys
@@ -218,18 +244,32 @@ def carregamento_landing(data_dict, path=None, file=None, resultado=None ):
                     data_dict = resultado.to_dict("records")
                     print(data_dict)
                     print("Dados para inserir com sucesso no MongoDB!")
+                
+                elif accept.endswith('.csv'):
+                    resultado = pd.read_csv(accept, delimiter=';')
+                    resultado = resultado.where(pd.notna(resultado), None)
+
+                    data_dict = resultado.to_dict("records")
+                    print(data_dict)
+                    print("Dados para inserir com sucesso no MongoDB!")
+                    
+                elif accept.endswith('.bin'): 
+                    pass 
+                    
 
                 else:
                     raise ValueError("Formato de arquivo não suportado")
             else:
                 print('arquivo já inserido')
 
+
     return data_dict
 
 #exemplo de uso
+# path = '/workspaces/projeto_ing/tests/app/src/teste_landing/'
 # dbname = get_database()
 # collection_name = dbname["collection_test02_mng_dev"]
 
-# data_dict = carregamento_landing(data_dict)
+# data_dict = carregamento_landing(data_dict, path)
 
 # collection_name.insert_many(data_dict)
