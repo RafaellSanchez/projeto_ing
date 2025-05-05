@@ -78,4 +78,5 @@ collection_name = dbname["collection_test02_mng_dev"]
 
 data_dict = carregamento_landing(data_dict)
 
+
 collection_name.insert_many(data_dict)
