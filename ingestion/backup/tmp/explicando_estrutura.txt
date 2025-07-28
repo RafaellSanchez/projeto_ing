@@ -1,0 +1,14 @@
+O arquivo na landing:
+ + tem que conter o layouts:
+  + tem que conter a pasta com o nome da api
+   + dentro deve conter a estrutura: 
+     estrutura.json 
+     tabela.json
+     + cada arquivo json que contem o conteudo que será salvo no banco, nome e tipo de colunas
+     exemplo:
+      quando o arquivo é resultado_cep_
+      + tabela_cep.json 
+      caso o arquivo seja resultado_cepavenidamairipora_
+      + tabela_cepavenidamairipora.json
+
+      deve conter as informações na estrutura, deve conter um padrão se não ele não pega os arquivos e ingeri na tabela

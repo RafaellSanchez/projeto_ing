@@ -1,0 +1,22 @@
+{
+    "colunas": [
+        {"nome":"nome" ,"tipo": "string"},
+        {"nome":"cpf" ,"tipo": "string"},
+        {"nome":"email","tipo": "string"},
+        {"nome":"endereco" ,"tipo": "string"},
+        {"nome":"bairro" ,"tipo": "string"},
+        {"nome":"estado" ,"tipo": "string"},
+        {"nome":"estado_nome" ,"tipo": "string"},
+        {"nome":"sigla" ,"tipo": "string"},
+        {"nome":"telefone" ,"tipo": "string"},
+        {"nome":"pais" ,"tipo": "string"},
+        {"nome":"code" ,"tipo": "string"},
+        {"nome":"cartao_cred" ,"tipo": "string"},
+        {"nome":"cartao_num" ,"tipo": "string"},
+        {"nome":"credt_exp" ,"tipo": "string"},
+        {"nome":"cvv" ,"tipo": "string"},
+        {"nome":"data" ,"tipo": "string"},
+        {"nome":"data_hora" ,"tipo": "string"},
+        {"nome":"digtap_ptcao" ,"tipo": "string"}
+    ]
+}

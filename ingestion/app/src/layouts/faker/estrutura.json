@@ -1,0 +1,11 @@
+[
+    {
+      "nome_arquivo": "dados_fakes",
+      "descricao": "tabela dados fakes",
+      "chave": {
+        "palavra_chave": "fakes",
+        "banco": "banco_fakes.db",
+        "tabela": "tabela_fakes"
+      }
+    }
+]

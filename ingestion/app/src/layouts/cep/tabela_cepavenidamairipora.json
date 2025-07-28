@@ -1,0 +1,13 @@
+{
+    "colunas": [
+        {"nome": "cep", "tipo": "string"},
+        {"nome": "logradouro", "tipo": "string"},
+        {"nome": "bairro", "tipo": "string"},
+        {"nome": "localidade", "tipo": "string"},
+        {"nome": "uf", "tipo": "string"},
+        {"nome": "ibge", "tipo": "string"},
+        {"nome": "gia", "tipo": "string"},
+        {"nome": "ddd", "tipo": "string"},
+        {"nome": "siafi", "tipo": "string"}
+    ]
+}

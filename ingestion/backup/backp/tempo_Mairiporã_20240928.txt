@@ -1,0 +1,23 @@
+INFO DO TEMPO
+-------------
+Cidade: Mairiporã
+descição: nublado
+Temperatura: 20.99000000000001ºC
+data e hora: 2024-09-28 16:40:21
+Chuva: {'probabilidade_de_chuva': 75}
+------------
+            
+Informações base: ('coord', {'lon': -46.5867, 'lat': -23.3186})
+Informações base: ('weather', [{'id': 803, 'main': 'Clouds', 'description': 'nublado', 'icon': '04d'}])
+Informações base: ('base', 'stations')
+Informações base: ('main', {'temp': 294.14, 'feels_like': 293.97, 'temp_min': 293.96, 'temp_max': 294.14, 'pressure': 1016, 'humidity': 64, 'sea_level': 1016, 'grnd_level': 917})
+Informações base: ('visibility', 10000)
+Informações base: ('wind', {'speed': 4.63, 'deg': 140})
+Informações base: ('clouds', {'probabilidade_de_chuva': 75})
+Informações base: ('dt', 1727541621)
+Informações base: ('sys', {'type': 1, 'id': 8379, 'country': 'BR', 'sunrise': 1727513359, 'sunset': 1727557457})
+Informações base: ('timezone', -10800)
+Informações base: ('id', 3458131)
+Informações base: ('name', 'Mairiporã')
+Informações base: ('cod', 200)
+------------

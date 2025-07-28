@@ -1,0 +1,23 @@
+INFO DO TEMPO
+-------------
+Cidade: São Paulo
+descição: nublado
+Temperatura: 20.640000000000043ºC
+data e hora: 2024-09-28 16:43:56
+Chuva: {'probabilidade_de_chuva': 75}
+------------
+            
+Informações base: ('coord', {'lon': -46.6361, 'lat': -23.5475})
+Informações base: ('weather', [{'id': 803, 'main': 'Clouds', 'description': 'nublado', 'icon': '04d'}])
+Informações base: ('base', 'stations')
+Informações base: ('main', {'temp': 293.79, 'feels_like': 293.71, 'temp_min': 293.35, 'temp_max': 294.51, 'pressure': 1018, 'humidity': 69, 'sea_level': 1018, 'grnd_level': 928})
+Informações base: ('visibility', 10000)
+Informações base: ('wind', {'speed': 6.17, 'deg': 130})
+Informações base: ('clouds', {'probabilidade_de_chuva': 75})
+Informações base: ('dt', 1727541836)
+Informações base: ('sys', {'type': 1, 'id': 8394, 'country': 'BR', 'sunrise': 1727513368, 'sunset': 1727557472})
+Informações base: ('timezone', -10800)
+Informações base: ('id', 3448439)
+Informações base: ('name', 'São Paulo')
+Informações base: ('cod', 200)
+------------

@@ -1,0 +1,24 @@
+{
+    "colunas": [
+        {"nome":"Concurso" ,"tipo": "string"},
+        {"nome":"data_sorteio" ,"tipo": "string"},
+        {"nome":"bola1","tipo": "string"},
+        {"nome":"bola2" ,"tipo": "string"},
+        {"nome":"bola3" ,"tipo": "string"},
+        {"nome":"bola4" ,"tipo": "string"},
+        {"nome":"bola5" ,"tipo": "string"},
+        {"nome":"bola6" ,"tipo": "string"},
+        {"nome":"ganhadores6_acertos" ,"tipo": "string"},
+        {"nome":"cidade_uf" ,"tipo": "string"},
+        {"nome":"rateio6_acertos" ,"tipo": "string"},
+        {"nome":"ganhadores5_acertos" ,"tipo": "string"},
+        {"nome":"rateio5_acertos" ,"tipo": "string"},
+        {"nome":"ganhadores4_acertos" ,"tipo": "string"},
+        {"nome":"rateio4_acertos" ,"tipo": "string"},
+        {"nome":"acumulado6_acertos" ,"tipo": "string"},
+        {"nome":"arrecadacao_toral" ,"tipo": "string"},
+        {"nome":"estimativa_premio" ,"tipo": "string"},
+        {"nome":"acumulado_mega_virada" ,"tipo": "string"},
+        {"nome":"observacao" ,"tipo": "string"}
+    ]
+}

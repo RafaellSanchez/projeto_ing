@@ -1,0 +1,19 @@
+cep;logradouro;bairro;localidade;uf;ibge;gia;ddd;siafi
+07664-000;Rodovia Arão Sahm;Jundiaizinho (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07631-200;Rodovia Arão Sahm;Rio acima;Mairiporã;SP;3528502;4339;11;6671
+07652-010;Rodovia Arão Sahm;Remédios;Mairiporã;SP;3528502;4339;11;6671
+07613-300;Rodovia Arão Sahm;Boa Vista;Mairiporã;SP;3528502;4339;11;6671
+07613-500;Rodovia Arão Sahm;Mantiqueira;Mairiporã;SP;3528502;4339;11;6671
+07625-500;Rodovia Arão Sahm;Luiz Fagundes;Mairiporã;SP;3528502;4339;11;6671
+07662-810;Rodovia Arão Sahm;Terra Preta (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07600-070;Rodovia Fernão Dias;Centro;Mairiporã;SP;3528502;4339;11;6671
+07631-300;Rodovia Fernão Dias;Rio acima;Mairiporã;SP;3528502;4339;11;6671
+07602-200;Rodovia Fernão Dias;Olho D'Água;Mairiporã;SP;3528502;4339;11;6671
+07625-000;Rodovia Fernão Dias;Luiz Fagundes;Mairiporã;SP;3528502;4339;11;6671
+07600-320;Rodovia Fernão Dias;Cidade Jardim;Mairiporã;SP;3528502;4339;11;6671
+07600-400;Rodovia Fernão Dias;Moinho;Mairiporã;SP;3528502;4339;11;6671
+07661-000;Rodovia Fernão Dias;Terra Preta (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07663-000;Rodovia Fernão Dias;Jundiaizinho (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07629-000;Rodovia Fernão Dias;Capoavinha;Mairiporã;SP;3528502;4339;11;6671
+07600-598;Rodovia Prefeito Luiz Salomao Chamma;Lavapés;Mairiporã;SP;3528502;4339;11;6671
+07605-700;Rodovia Prefeito Luiz Salomao Chamma;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671

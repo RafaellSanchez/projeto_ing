@@ -1,0 +1,51 @@
+cep;logradouro;bairro;localidade;uf;ibge;gia;ddd;siafi
+07642-670;Estrada G;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-680;Estrada F;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-660;Estrada E;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-700;Estrada D;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-520;Estrada M;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-730;Estrada C;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-560;Estrada L;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-640;Estrada B;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-630;Estrada K;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-650;Estrada A;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-600;Estrada J;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-610;Estrada I;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-620;Estrada H;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07642-510;Estrada M2;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07664-270;Estrada Um;Jundiaizinho (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07642-530;Estrada M1;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07632-590;Estrada Tupi;Rio acima;Mairiporã;SP;3528502;4339;11;6671
+07626-403;Estrada Doze;Luiz Fagundes;Mairiporã;SP;3528502;4339;11;6671
+07664-275;Estrada Dois;Jundiaizinho (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07619-626;Estrada Fragoso;Roseira;Mairiporã;SP;3528502;4339;11;6671
+07657-305;Estrada do Mimi;Mato Dentro;Mairiporã;SP;3528502;4339;11;6671
+07663-180;Estrada Mirante;Jundiaizinho (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07642-580;Estrada do Clube;Invernada;Mairiporã;SP;3528502;4339;11;6671
+07657-275;Estrada da Fonte;Mato Dentro;Mairiporã;SP;3528502;4339;11;6671
+07664-390;Estrada Laramara;Jundiaizinho (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07666-280;Estrada Laramara;Corumbá (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07626-420;Estrada do Itaim;Luiz Fagundes;Mairiporã;SP;3528502;4339;11;6671
+07658-520;Estrada Existente;Mato Dentro;Mairiporã;SP;3528502;4339;11;6671
+07605-360;Estrada Existente;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
+07625-770;Estrada de Ibirá;Luiz Fagundes;Mairiporã;SP;3528502;4339;11;6671
+07627-120;Estrada da Tapera;Luiz Fagundes;Mairiporã;SP;3528502;4339;11;6671
+07645-100;Estrada Existente;Marmelo;Mairiporã;SP;3528502;4339;11;6671
+07657-245;Estrada do Parque;Mato Dentro;Mairiporã;SP;3528502;4339;11;6671
+07667-735;Estrada Existente;Cardoso (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07631-355;Estrada Municipal;Rio acima;Mairiporã;SP;3528502;4339;11;6671
+07666-100;Estrada Municipal;Corumbá (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07626-105;Estrada Municipal;Luiz Fagundes;Mairiporã;SP;3528502;4339;11;6671
+07612-504;Estrada Existente;Boa Vista;Mairiporã;SP;3528502;4339;11;6671
+07663-175;Estrada Brasília;Jundiaizinho (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07634-005;Estrada das Lavras;Lavras;Mairiporã;SP;3528502;4339;11;6671
+07638-020;Estrada das Lavras;Pirucaia;Mairiporã;SP;3528502;4339;11;6671
+07667-700;Estrada Particular;Cardoso (Terra Preta);Mairiporã;SP;3528502;4339;11;6671
+07657-285;Estrada da Represa;Mato Dentro;Mairiporã;SP;3528502;4339;11;6671
+07623-190;Estrada do Canduá;Samambaia;Mairiporã;SP;3528502;4339;11;6671
+07631-405;Estrada das Lavras;Rio acima;Mairiporã;SP;3528502;4339;11;6671
+07629-302;Estrada Tahira Eki;Capoavinha;Mairiporã;SP;3528502;4339;11;6671
+07626-100;Estrada dos Moraes;Luiz Fagundes;Mairiporã;SP;3528502;4339;11;6671
+07618-640;Estrada São Pedro;Roseira;Mairiporã;SP;3528502;4339;11;6671
+07627-090;Estrada do Valinho;Luiz Fagundes;Mairiporã;SP;3528502;4339;11;6671
+07619-622;Estrada Particular;Roseira;Mairiporã;SP;3528502;4339;11;6671
