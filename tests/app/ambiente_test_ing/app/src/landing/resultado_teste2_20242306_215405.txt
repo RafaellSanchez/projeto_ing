@@ -1,3 +1,0 @@
-id;nome;idade
-1;rafael;30
-2;joyce;28

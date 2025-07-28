@@ -1,3 +1,0 @@
-id;nome
-10;skol
-11;phoebe

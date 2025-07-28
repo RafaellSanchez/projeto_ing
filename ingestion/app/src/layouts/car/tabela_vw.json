@@ -1,7 +1,0 @@
-{
-    "colunas": [
-        {"nome":"codigo" ,"tipo": "string"},
-        {"nome":"modelo" ,"tipo": "string"},
-        {"nome":"id" ,"tipo": "string"}
-    ]
-}

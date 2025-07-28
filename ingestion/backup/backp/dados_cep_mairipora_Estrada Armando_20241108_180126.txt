@@ -1,4 +1,0 @@
-cep;logradouro;bairro;localidade;uf;ibge;gia;ddd;siafi
-07600-740;Estrada Armando Barbosa de Almeida;Chácara Arantes;Mairiporã;SP;3528502;4339;11;6671
-07604-525;Estrada Armando Barbosa de Almeida;Caceia;Mairiporã;SP;3528502;4339;11;6671
-07605-005;Estrada Armando Barbosa de Almeida;Rio abaixo;Mairiporã;SP;3528502;4339;11;6671
